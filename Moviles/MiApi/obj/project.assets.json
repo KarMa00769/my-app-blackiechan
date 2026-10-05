@@ -504,11 +504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlosorozco/Escritorio/Moviles/MiApi/MiApi.csproj",
+      "projectUniqueName": "/home/carlosorozco/Escritorio/Aplicaciones Moviles/my-app-blackiechan/Moviles/MiApi/MiApi.csproj",
       "projectName": "MiApi",
-      "projectPath": "/home/carlosorozco/Escritorio/Moviles/MiApi/MiApi.csproj",
+      "projectPath": "/home/carlosorozco/Escritorio/Aplicaciones Moviles/my-app-blackiechan/Moviles/MiApi/MiApi.csproj",
       "packagesPath": "/home/carlosorozco/.nuget/packages/",
-      "outputPath": "/home/carlosorozco/Escritorio/Moviles/MiApi/obj/",
+      "outputPath": "/home/carlosorozco/Escritorio/Aplicaciones Moviles/my-app-blackiechan/Moviles/MiApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/carlosorozco/.nuget/NuGet/NuGet.Config"
