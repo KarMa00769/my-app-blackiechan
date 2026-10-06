@@ -6,6 +6,7 @@ import FormularioScreen from './Screens/FormularioScreen';
 import DetalleScreen from './Screens/DetalleScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
+import TareasScreen from './Screens/TareasScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab =  createBottomTabNavigator();
@@ -33,6 +34,7 @@ export default function App() {
         <Tab.Screen name="Inicio" component={InicioScreen} />
         <Tab.Screen name="Formulario" component={FormularioScreen} />
         <Tab.Screen name="Detalle" component={DetalleScreen} />
+        <Tab.Screen name="Tareas" component={TareasScreen} />
         
       </Tab.Navigator>
     </NavigationContainer>
