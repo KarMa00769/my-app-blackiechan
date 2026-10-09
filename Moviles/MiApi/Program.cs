@@ -38,15 +38,48 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAll");
 
 
-//Lista que actua como base de daros
+//Lista que actua como base de datos
 var tareas = new List<Tarea>()
 {
   new Tarea {Id=1, Titulo= "Tarea 1", Descripcion= "Descripcion de la tarea 1", Completada=false},
   new Tarea {Id=2, Titulo= "Tarea 2", Descripcion= "Descripcion de la tarea 2", Completada=true}  
 };
 
+var licencia = new Licencia
+{
+    Nombre = "Manuel",
+    numeroLicencia = "FQ-000112",
+    fechaNacimiento = "14/07/1986",
+    fechaVencimiento = "14/07/2030",
+    tipoLicencia = "Clase B",
+    direccion = "Piña 124, Fondo de Bikini",
+    estado = "Activa"
+};
+
 //Exponer endpoints
 //GET
+
+
+//app.MapGet("/getLicencias",() =>
+//{
+  //  return Results.Ok(tareas);
+//});
+
+//app.MapGet("/tareas/{id}", (int id) =>
+//{
+    //var tarea =tareas.FirstOrDefault(t=>t.Id == id);
+    //if (tarea == null)
+    //{
+   //     return Results.NotFound(new{mensaje = "Tarea no encontrada"});
+    //}
+  //  return Results.Ok(tarea);
+//});
+
+
+
+
+
+
 
 app.MapGet("/getTareas",() =>
 {
