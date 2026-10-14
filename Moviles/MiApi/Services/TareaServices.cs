@@ -27,4 +27,13 @@ public class TareaService : ITareaService
         _tarea.Add(tarea);
         return tarea;
     }
+
+    public bool Eliminar(int id)
+    {
+        var tarea = _tarea.FirstOrDefault(t => t.Id == id);
+        if (tarea is null) return false;
+        _tarea.Remove (tarea);
+        return true;
+    }
+    
 }
