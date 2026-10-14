@@ -1,3 +1,5 @@
+namespace MiApi.Models;
+
 public class Licencia
 {
     public string Nombre {get;set;} = string.Empty;

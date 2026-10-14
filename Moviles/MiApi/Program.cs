@@ -71,12 +71,14 @@ app.MapGet("/getLicencia", () =>
 
 
 
-
+//Get
 app.MapGet("/getTareas",() =>
 {
     return Results.Ok(tareas);
 });
 
+
+//get por ID
 app.MapGet("/tareas/{id}", (int id) =>
 {
     var tarea =tareas.FirstOrDefault(t=>t.Id == id);

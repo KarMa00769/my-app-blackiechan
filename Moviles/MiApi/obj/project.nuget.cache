@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "inU0m6ZFt8M=",
+  "dgSpecHash": "qnjcmeAhHI4=",
   "success": true,
-  "projectFilePath": "/home/carlosorozco/Escritorio/Moviles/MiApi/MiApi.csproj",
+  "projectFilePath": "/home/carlosorozco/Escritorio/Aplicaciones Moviles/my-app-blackiechan/Moviles/MiApi/MiApi.csproj",
   "expectedPackageFiles": [
     "/home/carlosorozco/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0-rc.2.25502.107/microsoft.aspnetcore.openapi.10.0.0-rc.2.25502.107.nupkg.sha512",
     "/home/carlosorozco/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
