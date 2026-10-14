@@ -35,5 +35,16 @@ public class TareaService : ITareaService
         _tarea.Remove (tarea);
         return true;
     }
-    
+
+    public bool Actualizar (int id, Tarea tarea)
+    {
+        var tareaBuscada = _tarea.FirstOrDefault(t=> t.Id == id);
+        if (tareaBuscada is null) return false;
+
+        tareaBuscada.Titulo = tarea.Titulo;
+        tareaBuscada.Descripcion = tarea.Descripcion;
+        tareaBuscada.Completada = tarea.Completada;
+
+        return true;
+    } 
 }
