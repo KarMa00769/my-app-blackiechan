@@ -8,6 +8,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import TareasScreen from './Screens/TareasScreen';
 import LicenciaScreen from './Screens/LicenciaScreen';
+import LicenciaApiScreen from './Screens/LicenciaApiScreen';
 import PerfilScreen from './Screens/PerfilScreen';
 
 const Stack = createNativeStackNavigator();
@@ -24,6 +25,8 @@ export default function App() {
           iconName ="home";
         } else if (route.name === 'Detalle'){
           iconName = "search";
+        } else if (route.name === 'Licencia API') {
+          iconName = "card";
         }else if (route.name === 'Perfil'){
           iconName = "person";
         }
@@ -38,6 +41,7 @@ export default function App() {
         <Tab.Screen name="Detalle" component={DetalleScreen} />
         <Tab.Screen name="Tareas" component={TareasScreen} />
         <Tab.Screen name="Licencia" component={LicenciaScreen} />
+        <Tab.Screen name="Licencia API" component={LicenciaApiScreen} />
         <Tab.Screen name="Perfil" component={PerfilScreen} />
       </Tab.Navigator>
     </NavigationContainer>

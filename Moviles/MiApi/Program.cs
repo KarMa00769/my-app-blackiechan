@@ -60,20 +60,11 @@ var licencia = new Licencia
 //GET
 
 
-//app.MapGet("/getLicencias",() =>
-//{
-  //  return Results.Ok(tareas);
-//});
+app.MapGet("/getLicencia", () =>
+{
+    return Results.Ok(licencia);
+});
 
-//app.MapGet("/tareas/{id}", (int id) =>
-//{
-    //var tarea =tareas.FirstOrDefault(t=>t.Id == id);
-    //if (tarea == null)
-    //{
-   //     return Results.NotFound(new{mensaje = "Tarea no encontrada"});
-    //}
-  //  return Results.Ok(tarea);
-//});
 
 
 
