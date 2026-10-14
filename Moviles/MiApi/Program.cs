@@ -78,7 +78,7 @@ app.MapGet("/getTareas",() =>
 });
 
 
-//get por ID
+//Get por ID
 app.MapGet("/tareas/{id}", (int id) =>
 {
     var tarea =tareas.FirstOrDefault(t=>t.Id == id);
